@@ -57,5 +57,10 @@ function loadTasks() {
     });
 }
 
+function exportToPDF() {
+    const element = document.getElementById("taskList");
+    html2pdf(element);
+}
+
 // Cargar las tareas al cargar la página
 loadTasks();
